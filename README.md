@@ -25,11 +25,11 @@ https://github.com/globchastyy/SwiftUIImageEffects
 http://blog.matthewcheok.com/design-teardown-stretchy-headers/
 
 ## Some other obj-C counterparts
-https://github.com/hfrahmann/HFStretchableTableHeaderView
-https://github.com/BillCarsonFr/twitterprofilepage
-https://github.com/pyro2927/ParallaxBlur
-https://github.com/bricklife/TwitterLikeProfileViewSample
-https://github.com/cyndibaby905/TwitterCover
+* https://github.com/hfrahmann/HFStretchableTableHeaderView
+* https://github.com/BillCarsonFr/twitterprofilepage
+* https://github.com/pyro2927/ParallaxBlur
+* https://github.com/bricklife/TwitterLikeProfileViewSample
+* https://github.com/cyndibaby905/TwitterCover
 
 ## License
 Released under the MIT license. See LICENSE for details.
