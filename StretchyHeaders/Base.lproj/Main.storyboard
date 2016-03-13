@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tvS-9r-rym">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="sf5-wR-NwI">
+            <objects>
+                <tableViewController id="tvS-9r-rym" customClass="TableViewController" customModule="StretchyHeaders" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="pd5-h0-pdv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="V6n-Oe-zXr">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiss1" translatesAutoresizingMaskIntoConstraints="NO" id="NAw-D1-Vcs">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today is a good day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKA-G8-yjH">
+                                    <rect key="frame" x="20" y="20" width="152.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="NAw-D1-Vcs" secondAttribute="trailing" id="AjJ-Kn-XQO"/>
+                                <constraint firstItem="NAw-D1-Vcs" firstAttribute="top" secondItem="V6n-Oe-zXr" secondAttribute="top" id="NLO-Xh-U0t"/>
+                                <constraint firstItem="lKA-G8-yjH" firstAttribute="top" secondItem="V6n-Oe-zXr" secondAttribute="top" constant="20" id="RJK-Tt-Tij"/>
+                                <constraint firstItem="NAw-D1-Vcs" firstAttribute="leading" secondItem="V6n-Oe-zXr" secondAttribute="leading" id="aRN-t5-D4e"/>
+                                <constraint firstAttribute="bottom" secondItem="NAw-D1-Vcs" secondAttribute="bottom" id="k7k-5w-0W7"/>
+                                <constraint firstItem="lKA-G8-yjH" firstAttribute="leading" secondItem="V6n-Oe-zXr" secondAttribute="leading" constant="20" id="vC0-7O-YkI"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellID" id="POQ-R2-ng8">
+                                <rect key="frame" x="0.0" y="328" width="600" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="POQ-R2-ng8" id="Pnb-1J-EcV">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tvS-9r-rym" id="mBx-Gf-aRn"/>
+                            <outlet property="delegate" destination="tvS-9r-rym" id="cLt-8j-E3H"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Hl-2E-fwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291" y="266"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="swiss1" width="500" height="332"/>
+    </resources>
+</document>
